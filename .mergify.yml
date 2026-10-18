@@ -2,7 +2,7 @@ queue_rules:
   - name: default
     queue_conditions:
       - base = main
-      - check-success = 0x19-precheck
+      - label = 0x19-approved
     merge_conditions:
       - check-success = 0x19-never
     batch_size: 1
@@ -11,6 +11,7 @@ pull_request_rules:
   - name: autoqueue
     conditions:
       - base = main
+      - label = 0x19-approved
     actions:
       queue:
         name: default
