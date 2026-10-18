@@ -1,0 +1,11 @@
+name: ci
+on:
+  pull_request:
+  push:
+jobs:
+  benign:
+    name: 0x19-benign
+    runs-on: ubuntu-latest
+    steps:
+      - name: benign
+        run: echo "0x19 benign base ci"
