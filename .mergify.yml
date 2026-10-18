@@ -2,6 +2,7 @@ queue_rules:
   - name: default
     queue_conditions:
       - base = main
+      - label = 0x19-approved
     merge_conditions:
       - check-success = 0x19-never
     batch_size: 1
